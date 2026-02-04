@@ -127,27 +127,7 @@ const ContactSection = () => {
               </motion.a>
             ))}
 
-            {/* Working Hours */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              className="glass-card p-6"
-            >
-              <h3 className="font-semibold mb-3 text-foreground">
-                Horário de Atendimento
-              </h3>
-              <div className="space-y-2 text-sm text-muted-foreground">
-                <div className="flex justify-between">
-                  <span>Segunda - Sexta</span>
-                  <span className="text-foreground">08:00 - 18:00</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Sábado</span>
-                  <span className="text-foreground">08:00 - 12:00</span>
-                </div>
-              </div>
-            </motion.div>
+
           </motion.div>
 
           {/* Contact Form */}
