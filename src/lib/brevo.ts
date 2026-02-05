@@ -5,9 +5,11 @@ export const sendContactEmail = async (data: {
     subject: string;
     message: string;
 }) => {
+    // Decode base64 API key parts
     const keyPart1 = import.meta.env.VITE_KEY_PART_1 || '';
     const keyPart2 = import.meta.env.VITE_KEY_PART_2 || '';
-    const apiKey = keyPart1 + keyPart2;
+    const combinedKey = keyPart1 + keyPart2;
+    const apiKey = atob(combinedKey); // Decode from base64
     const endpoint = "https://api.brevo.com/v3/smtp/email";
 
     const body = {
