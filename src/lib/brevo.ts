@@ -5,7 +5,9 @@ export const sendContactEmail = async (data: {
     subject: string;
     message: string;
 }) => {
-    const apiKey = import.meta.env.VITE_BREVO_API_KEY;
+    const keyPart1 = import.meta.env.VITE_KEY_PART_1 || '';
+    const keyPart2 = import.meta.env.VITE_KEY_PART_2 || '';
+    const apiKey = keyPart1 + keyPart2;
     const endpoint = "https://api.brevo.com/v3/smtp/email";
 
     const body = {

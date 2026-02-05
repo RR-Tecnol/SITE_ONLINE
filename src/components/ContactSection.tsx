@@ -126,11 +126,6 @@ const ContactSection = () => {
                 <ArrowRight className="w-4 h-4 text-muted-foreground ml-auto opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
               </motion.a>
             ))}
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 813939a2e7f6d09e9a6aa21592671a94a6648509
           </motion.div>
 
           {/* Contact Form */}
