@@ -5,6 +5,7 @@ import upgradeLogo from "@/assets/logos/upgrade.png";
 import gestaoLogo from "@/assets/logos/gestao.png";
 import genteLogo from "@/assets/logos/gente.png";
 import vidaiLogo from "@/assets/logos/vidai.png";
+import astreiaLogo from "@/assets/logos/astreia.png";
 
 const ProductsSection = () => {
   const ref = useRef(null);
@@ -15,6 +16,7 @@ const ProductsSection = () => {
     { logo: gestaoLogo, name: "Gestão Sobre Rodas" },
     { logo: genteLogo, name: "Sistema Gente" },
     { logo: vidaiLogo, name: "Vidai" },
+    { logo: astreiaLogo, name: "AstréIA" },
   ];
 
   const containerVariants = {
@@ -73,19 +75,19 @@ const ProductsSection = () => {
             variants={containerVariants}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
-            className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 items-center justify-items-center"
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 items-center justify-items-center"
           >
             {products.map((product, index) => (
               <motion.div
                 key={product.name}
                 variants={itemVariants}
                 whileHover={{ scale: 1.08 }}
-                className="w-full h-40 md:h-48 flex items-center justify-center p-1 cursor-pointer transition-transform duration-300"
+                className="w-full h-32 sm:h-40 lg:h-48 flex items-center justify-center p-2 cursor-pointer transition-transform duration-300"
               >
                 <img 
                   src={product.logo} 
                   alt={`Logo do produto ${product.name}`} 
-                  className={`object-contain drop-shadow-sm ${index === 0 ? 'max-h-[90%] max-w-[90%]' : 'max-h-full max-w-full scale-[1.3] md:scale-[1.5]'}`}
+                  className={`object-contain drop-shadow-sm ${index === 0 ? 'max-h-[75%] max-w-[75%]' : 'max-h-full max-w-full scale-[1.6] md:scale-[2.0]'}`}
                 />
               </motion.div>
             ))}
