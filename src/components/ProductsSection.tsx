@@ -57,37 +57,39 @@ const ProductsSection = () => {
           </p>
         </motion.div>
 
-        {/* Products Grid */}
+        {/* Big White Container */}
         <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7 }}
+          className="relative bg-white rounded-[2.5rem] p-8 lg:p-16 shadow-[0_0_60px_rgba(0,210,235,0.15)] mx-auto max-w-6xl"
         >
-          {products.map((product) => (
-            <motion.div
-              key={product.name}
-              variants={itemVariants}
-              whileHover={{ y: -8 }}
-              className="glass-card p-6 flex items-center justify-center group cursor-pointer relative overflow-hidden h-40 lg:h-52"
-            >
-              <div
-                className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              />
-              
-              {/* Logo Area */}
-              <div className="w-full h-full p-2 flex items-center justify-center relative z-10">
+          {/* Subtle Outer Glow simulating the image's border lines */}
+          <div className="absolute inset-0 border-[3px] border-primary/20 rounded-[2.5rem] pointer-events-none" />
+          <div className="absolute inset-[-6px] border border-primary/10 rounded-[3rem] pointer-events-none" />
+
+          {/* Products Grid */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+            className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 items-center justify-items-center"
+          >
+            {products.map((product, index) => (
+              <motion.div
+                key={product.name}
+                variants={itemVariants}
+                whileHover={{ scale: 1.08 }}
+                className="w-full h-40 md:h-48 flex items-center justify-center p-1 cursor-pointer transition-transform duration-300"
+              >
                 <img 
                   src={product.logo} 
                   alt={`Logo do produto ${product.name}`} 
-                  className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-110 drop-shadow-md"
+                  className={`object-contain drop-shadow-sm ${index === 0 ? 'max-h-[90%] max-w-[90%]' : 'max-h-full max-w-full scale-[1.3] md:scale-[1.5]'}`}
                 />
-              </div>
-
-              {/* Border glow */}
-              <div className="absolute inset-0 rounded-xl border border-primary/0 group-hover:border-primary/30 transition-colors duration-500 pointer-events-none" />
-            </motion.div>
-          ))}
+              </motion.div>
+            ))}
+          </motion.div>
         </motion.div>
       </div>
     </section>
