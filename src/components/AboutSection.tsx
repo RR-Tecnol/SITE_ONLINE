@@ -80,21 +80,6 @@ const AboutSection = () => {
               complexos do cenário tecnológico atual.
             </p>
 
-            {/* Stats */}
-            <div className="flex flex-wrap gap-6 sm:gap-8">
-              <div className="min-w-[100px]">
-                <div className="text-3xl sm:text-4xl font-bold text-gradient">10+</div>
-                <div className="text-muted-foreground text-xs sm:text-sm">Anos de Experiência</div>
-              </div>
-              <div className="min-w-[100px]">
-                <div className="text-3xl sm:text-4xl font-bold text-gradient">100+</div>
-                <div className="text-muted-foreground text-xs sm:text-sm">Projetos Entregues</div>
-              </div>
-              <div className="min-w-[100px]">
-                <div className="text-3xl sm:text-4xl font-bold text-gradient">50+</div>
-                <div className="text-muted-foreground text-xs sm:text-sm">Clientes Satisfeitos</div>
-              </div>
-            </div>
           </motion.div>
 
           {/* Right Content - Values Cards */}
