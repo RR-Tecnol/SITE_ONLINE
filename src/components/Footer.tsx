@@ -60,11 +60,13 @@ const Footer = () => {
                   className="w-[240px] sm:w-auto h-auto sm:h-40 md:h-40 -my-6 sm:my-0 object-contain"
                 />
               </a>
-              <img
-                src={logoAbes}
-                alt="ABES Associado"
-                className="w-auto h-16 sm:h-20 md:h-24 object-contain opacity-90 hover:opacity-100 transition-opacity"
-              />
+              <div className="bg-white rounded-xl py-2 px-4 shadow-sm opacity-90 hover:opacity-100 transition-opacity flex items-center justify-center">
+                <img
+                  src={logoAbes}
+                  alt="ABES Associado"
+                  className="w-auto h-10 sm:h-12 md:h-14 object-contain"
+                />
+              </div>
             </div>
             <p className="text-muted-foreground text-sm mb-6 max-w-sm mx-auto lg:mx-0">
               Consultoria e Serviços de Tecnologia da Informação. Transformando
