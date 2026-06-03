@@ -6,6 +6,7 @@ import { CheckCircle2, Award, Lightbulb, Shield, Users, X, ArrowRight } from "lu
 import logoF7 from "@/assets/logos/Logmarca F7 Infraestrutura.png";
 import logoVivver from "@/assets/logos/Logo Vivver Sistemas 2025.png";
 import logoBeneficencia from "@/assets/logos/logo_hospital_beneficencia.png";
+import logoDiag from "@/assets/logos/DIAG.png";
 
 const AboutSection = () => {
   const ref = useRef(null);
@@ -163,15 +164,18 @@ const AboutSection = () => {
                 suas operações seguras e eficientes.
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center justify-items-center bg-white/5 p-6 rounded-xl border border-white/10">
-                <div className="bg-white rounded-lg p-4 w-full h-28 flex items-center justify-center transition-transform hover:scale-105">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 items-center justify-items-center bg-white/5 p-4 sm:p-6 rounded-xl border border-white/10">
+                <div className="bg-white rounded-lg p-3 sm:p-4 w-full h-24 sm:h-28 flex items-center justify-center transition-transform hover:scale-105">
                   <img src={logoF7} alt="F7 Infraestrutura" className="max-h-full max-w-full object-contain" />
                 </div>
-                <div className="bg-white rounded-lg p-4 w-full h-28 flex items-center justify-center transition-transform hover:scale-105">
+                <div className="bg-white rounded-lg p-3 sm:p-4 w-full h-24 sm:h-28 flex items-center justify-center transition-transform hover:scale-105">
                   <img src={logoVivver} alt="Vivver Sistemas" className="max-h-full max-w-full object-contain" />
                 </div>
-                <div className="bg-white rounded-lg p-4 w-full h-28 flex items-center justify-center transition-transform hover:scale-105">
+                <div className="bg-white rounded-lg p-3 sm:p-4 w-full h-24 sm:h-28 flex items-center justify-center transition-transform hover:scale-105">
                   <img src={logoBeneficencia} alt="Hospital da Beneficência" className="max-h-full max-w-full object-contain" />
+                </div>
+                <div className="bg-white rounded-lg p-3 sm:p-4 w-full h-24 sm:h-28 flex items-center justify-center transition-transform hover:scale-105">
+                  <img src={logoDiag} alt="DIAG" className="max-h-full max-w-full object-contain" />
                 </div>
               </div>
             </motion.div>
