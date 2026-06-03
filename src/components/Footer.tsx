@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { Linkedin, Instagram, Facebook, ArrowUp, ShieldCheck, Mail, Phone, User } from "lucide-react";
 import logoRRTecnol from "@/assets/logo-rrtecnol.png";
+import logoAbes from "@/assets/logos/abes.png";
 
 const Footer = () => {
   const [showDpo, setShowDpo] = useState(false);
@@ -51,13 +52,20 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2 flex flex-col items-center lg:items-start text-center lg:text-left">
-            <a href="#hero" className="flex items-center mb-0 md:mb-4">
+            <div className="flex items-center flex-wrap gap-4 mb-2 md:mb-6">
+              <a href="#hero" className="flex items-center">
+                <img
+                  src={logoRRTecnol}
+                  alt="RR TECNOL"
+                  className="w-[240px] sm:w-auto h-auto sm:h-40 md:h-40 -my-6 sm:my-0 object-contain"
+                />
+              </a>
               <img
-                src={logoRRTecnol}
-                alt="RR TECNOL"
-                className="w-[280px] sm:w-auto h-auto sm:h-40 md:h-40 -my-6 sm:my-0 object-contain"
+                src={logoAbes}
+                alt="ABES Associado"
+                className="w-auto h-16 sm:h-20 md:h-24 object-contain opacity-90 hover:opacity-100 transition-opacity"
               />
-            </a>
+            </div>
             <p className="text-muted-foreground text-sm mb-6 max-w-sm mx-auto lg:mx-0">
               Consultoria e Serviços de Tecnologia da Informação. Transformando
               desafios em soluções tecnológicas inovadoras.

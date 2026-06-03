@@ -77,7 +77,7 @@ const AboutSection = () => {
               personalizadas que impulsionem o crescimento e a eficiência
               operacional de nossos clientes. Com uma equipe de profissionais
               qualificados, estamos prontos para enfrentar os desafios mais
-              complexos do cenário tecnológico atual.
+              complexos do cenário tecnológico atual. Como <strong>empresa associada à ABES</strong> (Associação Brasileira das Empresas de Software), reafirmamos nosso compromisso com a excelência, ética e com o desenvolvimento seguro e inovador do setor de tecnologia no Brasil.
             </p>
 
           </motion.div>
