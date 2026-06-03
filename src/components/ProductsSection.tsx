@@ -6,6 +6,7 @@ import gestaoLogo from "@/assets/logos/gestao.png";
 import genteLogo from "@/assets/logos/gente.png";
 import vidaiLogo from "@/assets/logos/vidai.png";
 import astreiaLogo from "@/assets/logos/astreia.png";
+import susgeriLogo from "@/assets/logos/susgeri.png";
 
 const ProductsSection = () => {
   const ref = useRef(null);
@@ -17,6 +18,7 @@ const ProductsSection = () => {
     { logo: genteLogo, name: "Sistema Gente" },
     { logo: vidaiLogo, name: "Vidai" },
     { logo: astreiaLogo, name: "AstréIA" },
+    { logo: susgeriLogo, name: "Susgeri" },
   ];
 
   const containerVariants = {
@@ -75,7 +77,7 @@ const ProductsSection = () => {
             variants={containerVariants}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 items-center justify-items-center"
+            className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 items-center justify-items-center"
           >
             {products.map((product, index) => (
               <motion.div
