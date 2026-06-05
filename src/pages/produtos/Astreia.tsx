@@ -135,7 +135,7 @@ const Astreia = () => {
                 variants={itemVariants}
                 src={astreiaLogo} 
                 alt="AstréIA" 
-                className="h-32 sm:h-40 md:h-48 object-contain mb-8 drop-shadow-lg"
+                className="bg-white/90 backdrop-blur-sm p-4 sm:p-6 rounded-2xl h-32 sm:h-40 md:h-48 object-contain mb-8 shadow-xl border border-white/20"
               />
               
               <motion.h1 variants={itemVariants} className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 leading-tight">
