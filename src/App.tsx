@@ -8,6 +8,7 @@ import Linktree from "./pages/Linktree";
 import NotFound from "./pages/NotFound";
 import Gente from "./pages/produtos/Gente";
 import Astreia from "./pages/produtos/Astreia";
+import Upgrade from "./pages/produtos/Upgrade";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="/produtos/gente" element={<Gente />} />
           <Route path="/produtos/astreia" element={<Astreia />} />
+          <Route path="/produtos/upgrade" element={<Upgrade />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
