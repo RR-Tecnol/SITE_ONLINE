@@ -25,12 +25,12 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/linketree" element={<Linktree />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="/produtos/gente" element={<Gente />} />
-          <Route path="/produtos/astreia" element={<Astreia />} />
-          <Route path="/produtos/upgrade" element={<Upgrade />} />
-          <Route path="/produtos/gestao-sobre-rodas" element={<GestaoSobreRodas />} />
-          <Route path="/produtos/vidai" element={<Vidai />} />
-          <Route path="/produtos/susgeri" element={<Susgeri />} />
+          <Route path="/gente" element={<Gente />} />
+          <Route path="/astreia" element={<Astreia />} />
+          <Route path="/upgrade" element={<Upgrade />} />
+          <Route path="/gestao-sobre-rodas" element={<GestaoSobreRodas />} />
+          <Route path="/vidai" element={<Vidai />} />
+          <Route path="/susgeri" element={<Susgeri />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

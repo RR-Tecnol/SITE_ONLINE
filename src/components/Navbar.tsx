@@ -26,12 +26,12 @@ const Navbar = () => {
   ];
 
   const products = [
-    { name: "GENTE", description: "Gestão de Pessoas", href: "/produtos/gente" },
-    { name: "AstréIA", description: "Assistente Jurídico com IA", href: "/produtos/astreia" },
-    { name: "UPGRADE", description: "Tecnologia Educacional", href: "/produtos/upgrade" },
-    { name: "Gestão Sobre Rodas", description: "Gestão de ações de saúde", href: "/produtos/gestao-sobre-rodas" },
-    { name: "VidAI", description: "Gestão Clínica com IA", href: "/produtos/vidai" },
-    { name: "SUSGERI", description: "Saúde Gerencial e Integrado", href: "/produtos/susgeri" },
+    { name: "GENTE", description: "Gestão de Pessoas", href: "/gente" },
+    { name: "AstréIA", description: "Assistente Jurídico com IA", href: "/astreia" },
+    { name: "UPGRADE", description: "Tecnologia Educacional", href: "/upgrade" },
+    { name: "Gestão Sobre Rodas", description: "Gestão de ações de saúde", href: "/gestao-sobre-rodas" },
+    { name: "VidAI", description: "Gestão Clínica com IA", href: "/vidai" },
+    { name: "SUSGERI", description: "Saúde Gerencial e Integrado", href: "/susgeri" },
   ];
 
   return (

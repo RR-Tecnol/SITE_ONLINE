@@ -88,22 +88,22 @@ const ProductsSection = () => {
                 whileHover={{ scale: 1.08 }}
                 onClick={() => {
                   if (product.name === "Sistema Gente") {
-                    navigate("/produtos/gente");
+                    navigate("/gente");
                   }
                   if (product.name === "AstréIA") {
-                    navigate("/produtos/astreia");
+                    navigate("/astreia");
                   }
                   if (product.name === "Upgrade") {
-                    navigate("/produtos/upgrade");
+                    navigate("/upgrade");
                   }
                   if (product.name === "Gestão Sobre Rodas") {
-                    navigate("/produtos/gestao-sobre-rodas");
+                    navigate("/gestao-sobre-rodas");
                   }
                   if (product.name === "Vidai") {
-                    navigate("/produtos/vidai");
+                    navigate("/vidai");
                   }
                   if (product.name === "Susgeri") {
-                    navigate("/produtos/susgeri");
+                    navigate("/susgeri");
                   }
                 }}
                 className="w-full h-32 sm:h-40 lg:h-48 flex items-center justify-center p-2 cursor-pointer transition-transform duration-300"
