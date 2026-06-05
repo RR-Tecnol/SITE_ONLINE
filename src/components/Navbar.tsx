@@ -8,6 +8,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const [isMobileProductsOpen, setIsMobileProductsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -96,7 +97,7 @@ const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 8 }}
                   transition={{ duration: 0.2 }}
-                  className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 glass-card p-2 z-50"
+                  className="absolute top-full -left-4 mt-3 w-64 glass-card p-2 z-50"
                 >
                   <p className="text-primary text-[10px] font-medium uppercase tracking-widest px-3 py-1.5">
                     Nossos Produtos
@@ -178,21 +179,36 @@ const Navbar = () => {
             
             {/* Produtos no mobile */}
             <div>
-              <p className="text-primary text-[10px] font-medium uppercase tracking-widest mb-2">
+              <button
+                className="flex items-center gap-2 w-full text-left text-muted-foreground hover:text-foreground transition-colors duration-300 text-sm font-medium py-2"
+                onClick={() => setIsMobileProductsOpen(!isMobileProductsOpen)}
+              >
                 Produtos
-              </p>
-              {products.map((product) => (
-                <a
-                  key={product.name}
-                  href={product.href}
-                  className="flex items-center gap-2 py-2 text-muted-foreground hover:text-foreground transition-colors duration-300 text-sm border-b border-border/30 last:border-0"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                  <span className="font-medium">{product.name}</span>
-                  <span className="text-muted-foreground/60 text-xs">— {product.description}</span>
-                </a>
-              ))}
+                <ChevronDown
+                  className={`w-4 h-4 transition-transform duration-200 ${isMobileProductsOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+              
+              <motion.div
+                initial={false}
+                animate={{ height: isMobileProductsOpen ? "auto" : 0, opacity: isMobileProductsOpen ? 1 : 0 }}
+                className="overflow-hidden"
+              >
+                <div className="pl-4 py-2 flex flex-col gap-3 border-l-2 border-primary/20 ml-2 mt-1 mb-2">
+                  {products.map((product) => (
+                    <a
+                      key={product.name}
+                      href={product.href}
+                      className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-300 text-sm"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
+                      <span className="font-medium">{product.name}</span>
+                      <span className="text-muted-foreground/60 text-xs truncate">— {product.description}</span>
+                    </a>
+                  ))}
+                </div>
+              </motion.div>
             </div>
 
             {navItems.slice(3).map((item) => (
