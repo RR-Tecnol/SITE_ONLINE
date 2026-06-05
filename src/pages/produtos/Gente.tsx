@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import genteLogo from "@/assets/logos/gente.png";
@@ -35,6 +35,10 @@ const itemVariants = {
 const Gente = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const badges = [
     "eSocial", "LRF", "LGPD", "CNAB 240", "App Mobile", "On-Premise / Nuvem"
