@@ -131,12 +131,16 @@ const Astreia = () => {
                 Produto RR Tecnol
               </motion.span>
               
-              <motion.img 
+              <motion.div 
                 variants={itemVariants}
-                src={astreiaLogo} 
-                alt="AstréIA" 
-                className="bg-white/90 backdrop-blur-sm p-4 sm:p-6 rounded-2xl h-32 sm:h-40 md:h-48 object-contain mb-8 shadow-xl border border-white/20"
-              />
+                className="bg-white/95 backdrop-blur-sm p-4 sm:p-6 rounded-2xl mb-8 shadow-xl border border-white/20 inline-flex items-center justify-center overflow-hidden"
+              >
+                <img 
+                  src={astreiaLogo} 
+                  alt="AstréIA" 
+                  className="h-24 sm:h-32 md:h-40 w-auto object-contain scale-[1.7] md:scale-[2]"
+                />
+              </motion.div>
               
               <motion.h1 variants={itemVariants} className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 leading-tight">
                 Transforme sua rotina <span className="text-gradient">hoje.</span>
