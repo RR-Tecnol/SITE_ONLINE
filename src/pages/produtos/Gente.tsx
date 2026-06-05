@@ -129,7 +129,7 @@ const Gente = () => {
                 variants={itemVariants}
                 src={genteLogo} 
                 alt="Sistema GENTE" 
-                className="h-20 sm:h-24 md:h-28 object-contain mb-8 drop-shadow-lg"
+                className="h-32 sm:h-40 md:h-48 object-contain mb-8 drop-shadow-lg"
               />
               
               <motion.h1 variants={itemVariants} className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 leading-tight">
