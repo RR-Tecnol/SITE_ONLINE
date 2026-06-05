@@ -99,6 +99,9 @@ const ProductsSection = () => {
                   if (product.name === "Gestão Sobre Rodas") {
                     navigate("/produtos/gestao-sobre-rodas");
                   }
+                  if (product.name === "Vidai") {
+                    navigate("/produtos/vidai");
+                  }
                 }}
                 className="w-full h-32 sm:h-40 lg:h-48 flex items-center justify-center p-2 cursor-pointer transition-transform duration-300"
               >
