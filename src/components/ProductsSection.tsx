@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import upgradeLogo from "@/assets/logos/upgrade.png";
 import gestaoLogo from "@/assets/logos/gestao.png";
 import genteLogo from "@/assets/logos/gente.png";
@@ -11,6 +12,7 @@ import susgeriLogo from "@/assets/logos/susgeri.png";
 const ProductsSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const navigate = useNavigate();
 
   const products = [
     { logo: upgradeLogo, name: "Upgrade" },
@@ -84,6 +86,11 @@ const ProductsSection = () => {
                 key={product.name}
                 variants={itemVariants}
                 whileHover={{ scale: 1.08 }}
+                onClick={() => {
+                  if (product.name === "Sistema Gente") {
+                    navigate("/produtos/gente");
+                  }
+                }}
                 className="w-full h-32 sm:h-40 lg:h-48 flex items-center justify-center p-2 cursor-pointer transition-transform duration-300"
               >
                 <img 

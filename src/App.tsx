@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Linktree from "./pages/Linktree";
 import NotFound from "./pages/NotFound";
+import Gente from "./pages/produtos/Gente";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/linketree" element={<Linktree />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/produtos/gente" element={<Gente />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
