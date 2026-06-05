@@ -96,6 +96,9 @@ const ProductsSection = () => {
                   if (product.name === "Upgrade") {
                     navigate("/produtos/upgrade");
                   }
+                  if (product.name === "Gestão Sobre Rodas") {
+                    navigate("/produtos/gestao-sobre-rodas");
+                  }
                 }}
                 className="w-full h-32 sm:h-40 lg:h-48 flex items-center justify-center p-2 cursor-pointer transition-transform duration-300"
               >
