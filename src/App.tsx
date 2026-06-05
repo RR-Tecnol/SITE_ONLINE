@@ -11,6 +11,7 @@ import Astreia from "./pages/produtos/Astreia";
 import Upgrade from "./pages/produtos/Upgrade";
 import GestaoSobreRodas from "./pages/produtos/GestaoSobreRodas";
 import Vidai from "./pages/produtos/Vidai";
+import Susgeri from "./pages/produtos/Susgeri";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/produtos/upgrade" element={<Upgrade />} />
           <Route path="/produtos/gestao-sobre-rodas" element={<GestaoSobreRodas />} />
           <Route path="/produtos/vidai" element={<Vidai />} />
+          <Route path="/produtos/susgeri" element={<Susgeri />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
