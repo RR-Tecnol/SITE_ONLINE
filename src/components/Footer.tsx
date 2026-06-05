@@ -52,12 +52,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2 flex flex-col items-center lg:items-start text-center lg:text-left">
-            <div className="flex items-center flex-wrap gap-4 mb-2 md:mb-6">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-6 mb-6">
               <a href="#hero" className="flex items-center">
                 <img
                   src={logoRRTecnol}
                   alt="RR TECNOL"
-                  className="w-[240px] sm:w-auto h-auto sm:h-40 md:h-40 -my-6 sm:my-0 object-contain"
+                  className="w-[200px] sm:w-auto h-auto sm:h-40 md:h-40 object-contain -my-4 sm:my-0"
                 />
               </a>
               <div className="bg-white rounded-xl py-2 px-4 shadow-sm opacity-90 hover:opacity-100 transition-opacity flex items-center justify-center">
