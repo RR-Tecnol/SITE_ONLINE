@@ -17,10 +17,10 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { name: "Início", href: "#hero" },
-    { name: "Quem Somos", href: "#about" },
-    { name: "Serviços", href: "#services" },
-    { name: "Contato", href: "#contact" },
+    { name: "Início", href: "/" },
+    { name: "Quem Somos", href: "/#about" },
+    { name: "Serviços", href: "/#services" },
+    { name: "Contato", href: "/#contact" },
   ];
 
   return (
@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.a
-            href="#hero"
+            href="/"
             className="flex items-center"
             whileHover={{ scale: 1.02 }}
           >
