@@ -7,6 +7,8 @@ import {
   Globe,
   Cloud,
   ShieldCheck,
+  History,
+  Database,
   ArrowRight,
   X,
 } from "lucide-react";
@@ -105,6 +107,42 @@ const ServicesSection = () => {
         "Orientação em adequação à LGPD",
       ],
       differencial: "Abordagem proativa — identificamos e neutralizamos ameaças antes que impactem sua operação.",
+    },
+    {
+      icon: History,
+      title: "Sistemas Legados",
+      description:
+        "Manutenção, suporte e atualização de linguagem de programação de sistemas legados, preservando o valor do investimento já realizado.",
+      gradient: "from-amber-500 to-orange-500",
+      subtitle: "Preserve o que funciona, evolua o que trava",
+      details: [
+        "Manutenção corretiva e evolutiva de sistemas em operação",
+        "Migração de linguagens obsoletas para tecnologias modernas (ex: Delphi, COBOL, VB6)",
+        "Refatoração de código legado preservando as regras de negócio",
+        "Documentação técnica de sistemas sem histórico registrado",
+        "Suporte contínuo com SLA definido para sistemas em produção",
+        "Planejamento gradual de modernização sem interrupção da operação",
+      ],
+      differencial:
+        "Combinamos conhecimento de sistemas legados com tecnologias atuais — sem big bang rewrite, preservando dados históricos e regras de negócio críticas.",
+    },
+    {
+      icon: Database,
+      title: "Migração de Banco de Dados",
+      description:
+        "Migração segura e estruturada de bases de dados entre tecnologias, versões e ambientes — sem perda de informação e com mínima interrupção.",
+      gradient: "from-indigo-500 to-sky-500",
+      subtitle: "Seus dados onde precisam estar, com integridade garantida",
+      details: [
+        "Migração entre tecnologias de banco de dados (MySQL, PostgreSQL, SQL Server, Oracle, MongoDB)",
+        "Atualização de versões legadas de banco para versões suportadas",
+        "Migração de ambientes on-premise para a nuvem",
+        "ETL e transformação de dados durante o processo de migração",
+        "Validação de integridade e testes funcionais pós-migração",
+        "Plano de rollback e contingência — zero perda de dados",
+      ],
+      differencial:
+        "Processo estruturado com mapeamento completo de dados, validação automatizada e plano de contingência documentado — sua migração não é um salto no escuro.",
     },
   ];
 
