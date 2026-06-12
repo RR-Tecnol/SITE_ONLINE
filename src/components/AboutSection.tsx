@@ -7,6 +7,8 @@ import logoF7 from "@/assets/logos/Logmarca F7 Infraestrutura.png";
 import logoVivver from "@/assets/logos/Logo Vivver Sistemas 2025.png";
 import logoBeneficencia from "@/assets/logos/logo_hospital_beneficencia.png";
 import logoDiag from "@/assets/logos/DIAG.png";
+import logoAbrem from "@/assets/logos/abrem.png";
+import logoBigdataCf from "@/assets/logos/bigdatacf.png";
 
 const AboutSection = () => {
   const ref = useRef(null);
@@ -176,6 +178,12 @@ const AboutSection = () => {
                 </div>
                 <div className="bg-white rounded-lg p-3 sm:p-4 w-full h-24 sm:h-28 flex items-center justify-center transition-transform hover:scale-105">
                   <img src={logoDiag} alt="DIAG" className="max-h-full max-w-full object-contain" />
+                </div>
+                <div className="bg-white rounded-lg p-3 sm:p-4 w-full h-24 sm:h-28 flex items-center justify-center transition-transform hover:scale-105">
+                  <img src={logoAbrem} alt="Abrem" className="max-h-full max-w-full object-contain" />
+                </div>
+                <div className="bg-white rounded-lg p-3 sm:p-4 w-full h-24 sm:h-28 flex items-center justify-center transition-transform hover:scale-105">
+                  <img src={logoBigdataCf} alt="Bigdata CF" className="max-h-full max-w-full object-contain" />
                 </div>
               </div>
             </motion.div>
